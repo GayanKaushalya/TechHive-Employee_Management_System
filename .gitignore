@@ -1,0 +1,25 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+Backend/api-gateway/target/
+Backend/auth-service/target/
+Backend/employee-service/target/
+Backend/feedback-service/target/
+Backend/project-service/target/
+Backend/reporting-service/target/
+
+# Node / React
+EMS_Frontend/node_modules/
+EMS_Frontend/dist/
+EMS_Frontend/.vite/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Log files
+*.log
