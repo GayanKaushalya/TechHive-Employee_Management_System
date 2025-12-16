@@ -69,12 +69,6 @@ The application is suitable for academic projects, portfolio demonstrations, and
 
 ---
 
-## System Architecture
-
-The application is implemented using **loosely coupled microservices**, all exposed through a centralized **API Gateway**.
-
----
-
 ## 📸 Project UI Screenshots
 
 <details>
@@ -125,6 +119,12 @@ The application is implemented using **loosely coupled microservices**, all expo
 ![Logout](assets/account-logout.png)
 
 </details>
+
+---
+
+## System Architecture
+
+The application is implemented using **loosely coupled microservices**, all exposed through a centralized **API Gateway**.
 
 ---
 
