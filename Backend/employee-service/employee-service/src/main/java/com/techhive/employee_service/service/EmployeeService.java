@@ -156,7 +156,8 @@ public class EmployeeService {
 
     @Transactional(readOnly = true)
     public List<DepartmentEmployeeDTO> getEmployeesByDepartment(Integer departmentId) {
-        return employeeRepository.getEmployeesByDepartmentProcedure(departmentId);
+        // Call the method defined in the Custom Interface, NOT the Procedure method
+        return employeeRepository.getEmployeesByDepartment(departmentId);
     }
 
 }

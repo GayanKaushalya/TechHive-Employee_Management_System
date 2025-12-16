@@ -52,7 +52,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, String>, Emp
     List<Employee> getEmployeeByIdProcedure(@Param("p_employee_id") String employeeId);
 
     @Procedure(name = "getEmployeeDashboard")
-    List<EmployeeDashboardDTO> getEmployeeDashboardProcedure(@Param("p_employee_id") String employeeId);
+     List<EmployeeDashboardDTO> getEmployeeDashboardProcedure(@Param("p_employee_id") String employeeId);
 
     @Procedure(name = "getEmployeeCredentials")
     List<CredentialsDTO> getEmployeeCredentialsProcedure(@Param("p_employee_id") String employeeId);
@@ -60,7 +60,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, String>, Emp
     @Procedure(name = "getAvailableEmployees")
     List<AvailableEmployeeDTO> getAvailableEmployeesProcedure();
 
-    @Procedure(name = "getEmployeesByDepartment")
-    List<DepartmentEmployeeDTO> getEmployeesByDepartmentProcedure(@Param("p_department_id") Integer departmentId);
+    //@Procedure(name = "getEmployeesByDepartment")
+    //List<DepartmentEmployeeDTO> getEmployeesByDepartmentProcedure(@Param("p_department_id") Integer departmentId);
 
 }

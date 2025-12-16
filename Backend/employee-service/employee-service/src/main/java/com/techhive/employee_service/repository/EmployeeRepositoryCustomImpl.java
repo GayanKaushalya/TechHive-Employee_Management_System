@@ -35,13 +35,16 @@ public class EmployeeRepositoryCustomImpl implements EmployeeRepositoryCustom {
     @Override
     @SuppressWarnings("unchecked")
     public List<DepartmentEmployeeDTO> getEmployeesByDepartment(Integer departmentId) {
-        StoredProcedureQuery query = entityManager.createNamedStoredProcedureQuery("getEmployeesByDepartment");
+        StoredProcedureQuery query = entityManager.createStoredProcedureQuery("GET_EMPLOYEES_BY_DEPARTMENT_SP");
+
+        query.registerStoredProcedureParameter("p_department_id", Integer.class, jakarta.persistence.ParameterMode.IN);
+        query.registerStoredProcedureParameter("p_employee_cursor", Class.class, jakarta.persistence.ParameterMode.REF_CURSOR);
+
         query.setParameter("p_department_id", departmentId);
 
         List<Object[]> results = query.getResultList();
 
-        // <<<--- FIX 1: MANUALLY SET THE FIELDS INSTEAD OF USING A CONSTRUCTOR ---<<<
-        // This is a more robust way to map the results.
+        // Manual mapping to DTO
         return results.stream().map(r -> {
             DepartmentEmployeeDTO dto = new DepartmentEmployeeDTO();
             dto.setEmployeeId((String) r[0]);

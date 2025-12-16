@@ -1,7 +1,6 @@
 // src/components/AdminSidebarMenu.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // <-- Use NavLink instead of Link
-
+import { NavLink } from 'react-router-dom'; 
 function AdminSidebarMenu() {
   return (
     <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
