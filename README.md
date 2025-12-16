@@ -73,6 +73,61 @@ The application is suitable for academic projects, portfolio demonstrations, and
 
 The application is implemented using **loosely coupled microservices**, all exposed through a centralized **API Gateway**.
 
+---
+
+## 📸 Project UI Screenshots
+
+<details>
+<summary><strong>Click here to view Application Screenshots</strong></summary>
+
+### 1. Dashboards
+
+**Admin Dashboard** - Key metrics and quick actions.
+![Admin Dashboard](assets/admin-dashboard.png)
+
+**Employee Dashboard** - Personalized view for staff.
+![Employee Dashboard](assets/employee-dashboard.png)
+
+---
+
+### 2. Administrative Modules
+
+**Employee Management** - List and manage staff records.
+![Employee Management](assets/employee-management.png)
+
+**Department Management** - Manage organizational structure.
+![Department Management](assets/Department-management.png)
+
+**Project Management** - Oversee projects and timelines.
+![Project Management](assets/project-management.png)
+
+**Salary Management** - Secure salary administration.
+![Salary Management](assets/salary-management.png)
+
+---
+
+### 3. Feedback & Reports
+
+**Feedback Management** - Monitor internal feedback.
+![Feedback Management](assets/feedback-management.png)
+
+**Reporting Center** - Generate PDF reports.
+![Reports](assets/reports.png)
+
+---
+
+### 4. User Profile & Security
+
+**My Profile** - User details and password management.
+![My Account](assets/myaccount.png)
+
+**Secure Logout** - Confirmation modal.
+![Logout](assets/account-logout.png)
+
+</details>
+
+---
+
 ### Microservices Overview
 
 - **API Gateway** – Central entry point, request routing, and JWT validation
